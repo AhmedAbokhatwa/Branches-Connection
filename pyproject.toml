@@ -1,0 +1,20 @@
+[project]
+name = "branches_connection"
+authors = [
+    { name = "Ahmed Reda Abu-khatwa", email = "Ahmedreda199785@gmail.com"}
+]
+description = "help you connect with other Branches TO Get and Insert Document from Other Branches"
+requires-python = ">=3.10"
+readme = "README.md"
+dynamic = ["version"]
+dependencies = [
+    # "frappe~=15.0.0" # Installed and managed by bench.
+]
+
+[build-system]
+requires = ["flit_core >=3.4,<4"]
+build-backend = "flit_core.buildapi"
+
+# These dependencies are only installed when developer mode is enabled
+[tool.bench.dev-dependencies]
+# package_name = "~=1.1.0"
