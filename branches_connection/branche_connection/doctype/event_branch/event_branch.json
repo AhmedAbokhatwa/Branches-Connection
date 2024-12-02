@@ -8,7 +8,7 @@
  "engine": "InnoDB",
  "field_order": [
   "producer_url",
-  "producer_doctypes",
+  "branch_doctypes",
   "section_break_3",
   "api_key",
   "api_secret",
@@ -24,13 +24,6 @@
    "label": "Producer URL",
    "reqd": 1,
    "unique": 1
-  },
-  {
-   "fieldname": "producer_doctypes",
-   "fieldtype": "Table",
-   "label": "Event Producer Document Types",
-   "options": "Event Producer Document Type",
-   "reqd": 1
   },
   {
    "fieldname": "section_break_3",
@@ -68,10 +61,17 @@
    "fieldtype": "Check",
    "hidden": 1,
    "label": "Incoming Change"
+  },
+  {
+   "fieldname": "branch_doctypes",
+   "fieldtype": "Table",
+   "label": "Branches Document Type",
+   "options": "Branches Document Type",
+   "reqd": 1
   }
  ],
  "links": [],
- "modified": "2024-12-02 16:10:16.572554",
+ "modified": "2024-12-02 17:16:44.654184",
  "modified_by": "Administrator",
  "module": "Branche Connection",
  "name": "Event Branch",
