@@ -17,6 +17,7 @@ from frappe.utils.password import get_decrypted_password
 
 class EventBranch(Document):
 	def before_insert(self):
+		frappe.msgprint("before_insert")
 		self.check_url()
 		self.validate_event_subscriber()
 		self.incoming_change = True
